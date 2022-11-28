@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:rgb(230,228,228);
+    overflow:hidden;
+}
+header{
+    position: relative;
+    width:100%;
+    padding:40px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:2;
+}
+.menu-bar{
+    position: relative;
+    display:flex;
+}
+.menu-bar .logo{
+    text-decoration:none;
+    font-size:22px;
+    font-weight:600;
+    text-transform: capitalize;
+    color:#000;
+}
+.menu-bar .logo span{
+    color:red;
+}
+.menu-bar ul{
+    position: relative;
+    left:10vh;
+    display:flex;
+}
+.menu-bar ul li{
+    list-style:none;
+}
+.menu-bar ul li a{
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    color:#000;
+    margin:5px 20px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.menu-bar ul li a:hover{
+    color:red;
+}
+.menu-bar ul li a i{
+    position: relative;
+    font-size:14px;
+    left:2px;
+}
+.hiddenMenu{
+    position: absolute;
+    top:35px;
+    width:320px;
+    height:300px;
+    background-color:#fff;
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(20px);
+    transition:0.8s;
+}
+.menu-bar ul li:hover .hiddenMenu{
+    opacity:1;
+    pointer-events: all;
+    transform:translateY(0px);
+}
+.hiddenMenu p{
+    padding:20px 40px;
+    font-size:18px;
+}
+.hiddenMenu ul{
+    position: relative;
+    left:12px;
+    display:flex;
+    flex-direction: column;
+}
+.hiddenMenu ul li{
+    list-style:none;
+}
+.hiddenMenu ul li a{
+    font-size:16px;
+}
+.hiddenMenu ul li a span{
+    position: relative;
+    left:10px;
+    top:-18px;
+}
+.hiddenMenu ul li a img{
+    width:8%;
+    padding:5px 0;
+}
+.menu-btn{
+    position: relative;
+}
+.menu-btn a{
+    position: relative;
+    padding:15px 35px;
+    background-color:#fff;
+    border-radius:25px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+    color:#000;
+    cursor: pointer;
+    transition:0.5s;
+}
+.menu-btn a:hover{
+    background-color:red;
+    color:#fff;
+}
+.content{
+    position: relative;
+    display:flex;
+}
+.content-info{
+    position: relative;
+    padding:30px 100px;
+}
+.content-info h1{
+    font-size:5.5rem;
+    font-weight:600;
+    color:#000;
+    line-height: 1;
+}
+.content-info .detils{
+    font-size:18px;
+    line-height:1.5;
+    color:#444444;
+    padding:20px 0;
+}
+.content-info .download{
+    font-weight:600;
+    color:#000;
+}
+.content-info .brands{
+    position: relative;
+    top:15px;
+    left:-8px;
+    display:flex;
+}
+.content-info .brands .brand-icon{
+    position: relative;
+    top:15px;
+    display:flex;
+    width:180px;
+    height:70px;
+    background-color:#a0abab;
+    padding:12px 30px;
+    border-radius:12px;
+    margin:0 8px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.content-info .brands .brand-icon:hover{
+    background-color:rgb(255,85,0);
+}
+.content-info .brands .brand-icon i{
+    position: relative;
+    top:6px;
+    font-size:25px;
+}
+.content-info .brands .brand-icon .brand-info{
+    position: relative;
+    left:12px;
+}
+.content-info .brands .brand-icon .brand-info .title{
+    font-size:14px;
+    font-weight:500;
+    color:#262626;
+}
+.content-info .brands .brand-icon .brand-info h2{
+    font-size:18px;
+    font-weight:500;
+}
+.img-content{
+    position: absolute;
+    top:-16.5vh;
+    right:0vh;
+    width:450px;
+    height:100vh;
+    background-color:#a0abab;
+}
+.img-content img{
+    position: absolute;
+    bottom:0vh;
+    width:90%;
+}
+.img-content .extaImg{
+    position: absolute;
+    top:15vh;
+    right:48vh;
+    width:10%;
+}

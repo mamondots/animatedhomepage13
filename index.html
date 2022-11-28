@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webpage</title>
+</head>
+<body>
+    <div class="container">
+       <header>
+         <div class="menu-bar">
+             <a href="" class="logo">Mamon<span>dots</span></a>
+             <ul>
+               <li><a href="">Features <i class="fa-solid fa-angle-down"></i></a>
+                  <div class="hiddenMenu">
+                     <p>Online transactions</p>
+                     <ul>
+                        <li><a href=""><img src="img/online-banking-send-money-icon-150x150.webp"><span>Send Money</span></a></li>
+                        <li><a href=""><img src="img/online-banking-send-money-icon-150x150.webp"><span>Send Money</span></a></li>
+                        <li><a href=""><img src="img/online-banking-send-money-icon-150x150.webp"><span>Send Money</span></a></li>
+                        <li><a href=""><img src="img/online-banking-send-money-icon-150x150.webp"><span>Send Money</span></a></li>
+                        <li><a href=""><img src="img/online-banking-send-money-icon-150x150.webp"><span>Send Money</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li><a href="">How it</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Ease of use</a></li>
+               <li><a href="">Reviwes</a></li>
+             </ul>
+         </div>
+         <div class="menu-btn">
+             <a href="">Download Cv</a>
+         </div>
+       </header>
+       <div class="content">
+          <div class="content-info">
+             <h1>Transact <br>money easily</h1>
+             <p class="detils">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+               Nihil quidem necessitatibus exercitationem quod eos, <br>
+               saepe quia repellat consectetur.
+             </p>
+             <p class="download">DOWNLOAD NOW ON :</p>
+             <div class="brands">
+                <div class="brand-icon">
+                  <i class="fa-brands fa-apple"></i>
+                  <div class="brand-info">
+                     <p class="title">Available on</p>
+                     <h2>App Store</h2>
+                  </div>
+                </div>
+
+                <div class="brand-icon">
+                  <i class="fa-brands fa-google-play"></i>
+                  <div class="brand-info">
+                     <p class="title">Available on</p>
+                     <h2>Play Store</h2>
+                  </div>
+                </div>
+
+             </div>
+          </div>
+          <div class="img-content">
+             <img src="img/online-banking-handphone.webp">
+             <img src="img/online-banking-star.webp" class="extaImg">
+          </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+       let animation = anime({
+         targets:'header',
+         translateY:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+       });
+
+       anime({
+         targets:'.content-info h1',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:300,
+       });
+
+       anime({
+         targets:'.content-info .detils',
+         translateX:[80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:500,
+       });
+
+       anime({
+         targets:'.content-info .download',
+         translateY:[80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:600,
+       });
+
+       anime({
+         targets:'.content-info .brands',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:800,
+       });
+
+       anime({
+         targets:'.img-content',
+         translateX:[120,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1000,
+       });
+       
+       anime({
+         targets:'.img-content img',
+         translateY:[120,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1200,
+       });
+    </script>
+</body>
+</html>
